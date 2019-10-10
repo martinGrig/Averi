@@ -13,6 +13,8 @@
 		3F1CDE7D234F256D00BDC523 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F1CDE7B234F256D00BDC523 /* Main.storyboard */; };
 		3F1CDE7F234F256E00BDC523 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F1CDE7E234F256E00BDC523 /* Assets.xcassets */; };
 		3F1CDE82234F256E00BDC523 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F1CDE80234F256E00BDC523 /* LaunchScreen.storyboard */; };
+		3F360E28234F2E9400E9A556 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F360E27234F2E9400E9A556 /* EventTableViewCell.swift */; };
+		3F360E2A234F31FF00E9A556 /* AgendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F360E29234F31FF00E9A556 /* AgendaTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3F1CDE7E234F256E00BDC523 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F1CDE81234F256E00BDC523 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F1CDE83234F256E00BDC523 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F360E27234F2E9400E9A556 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		3F360E29234F31FF00E9A556 /* AgendaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				3F1CDE7E234F256E00BDC523 /* Assets.xcassets */,
 				3F1CDE80234F256E00BDC523 /* LaunchScreen.storyboard */,
 				3F1CDE83234F256E00BDC523 /* Info.plist */,
+				3F360E27234F2E9400E9A556 /* EventTableViewCell.swift */,
+				3F360E29234F31FF00E9A556 /* AgendaTableViewCell.swift */,
 			);
 			path = Averi;
 			sourceTree = "<group>";
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F360E28234F2E9400E9A556 /* EventTableViewCell.swift in Sources */,
 				3F1CDE7A234F256D00BDC523 /* ViewController.swift in Sources */,
 				3F1CDE76234F256D00BDC523 /* AppDelegate.swift in Sources */,
 				3F1CDE78234F256D00BDC523 /* SceneDelegate.swift in Sources */,
+				3F360E2A234F31FF00E9A556 /* AgendaTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +293,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P5ZRF5SKH7;
+				DEVELOPMENT_TEAM = JU47A894QP;
 				INFOPLIST_FILE = Averi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -303,7 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P5ZRF5SKH7;
+				DEVELOPMENT_TEAM = JU47A894QP;
 				INFOPLIST_FILE = Averi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
