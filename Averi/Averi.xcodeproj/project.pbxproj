@@ -17,6 +17,8 @@
 		3F360E2A234F31FF00E9A556 /* AgendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F360E29234F31FF00E9A556 /* AgendaTableViewCell.swift */; };
 		3F360E2C234F468300E9A556 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F360E2B234F468300E9A556 /* Event.swift */; };
 		3F360E2E234F479D00E9A556 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F360E2D234F479D00E9A556 /* SampleData.swift */; };
+		3F360E30234F54BF00E9A556 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F360E2F234F54BF00E9A556 /* EventTableViewController.swift */; };
+		3F360E32234F54EC00E9A556 /* AgendaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F360E31234F54EC00E9A556 /* AgendaTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		3F360E29234F31FF00E9A556 /* AgendaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaTableViewCell.swift; sourceTree = "<group>"; };
 		3F360E2B234F468300E9A556 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		3F360E2D234F479D00E9A556 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		3F360E2F234F54BF00E9A556 /* EventTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
+		3F360E31234F54EC00E9A556 /* AgendaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,16 +69,18 @@
 			isa = PBXGroup;
 			children = (
 				3F1CDE75234F256D00BDC523 /* AppDelegate.swift */,
+				3F360E2B234F468300E9A556 /* Event.swift */,
+				3F360E2D234F479D00E9A556 /* SampleData.swift */,
 				3F1CDE77234F256D00BDC523 /* SceneDelegate.swift */,
-				3F1CDE79234F256D00BDC523 /* ViewController.swift */,
 				3F1CDE7B234F256D00BDC523 /* Main.storyboard */,
+				3F360E31234F54EC00E9A556 /* AgendaTableViewController.swift */,
+				3F360E2F234F54BF00E9A556 /* EventTableViewController.swift */,
 				3F1CDE7E234F256E00BDC523 /* Assets.xcassets */,
 				3F1CDE80234F256E00BDC523 /* LaunchScreen.storyboard */,
 				3F1CDE83234F256E00BDC523 /* Info.plist */,
 				3F360E27234F2E9400E9A556 /* EventTableViewCell.swift */,
 				3F360E29234F31FF00E9A556 /* AgendaTableViewCell.swift */,
-				3F360E2B234F468300E9A556 /* Event.swift */,
-				3F360E2D234F479D00E9A556 /* SampleData.swift */,
+				3F1CDE79234F256D00BDC523 /* ViewController.swift */,
 			);
 			path = Averi;
 			sourceTree = "<group>";
@@ -152,9 +158,11 @@
 			files = (
 				3F360E28234F2E9400E9A556 /* EventTableViewCell.swift in Sources */,
 				3F360E2E234F479D00E9A556 /* SampleData.swift in Sources */,
+				3F360E30234F54BF00E9A556 /* EventTableViewController.swift in Sources */,
 				3F1CDE7A234F256D00BDC523 /* ViewController.swift in Sources */,
 				3F1CDE76234F256D00BDC523 /* AppDelegate.swift in Sources */,
 				3F1CDE78234F256D00BDC523 /* SceneDelegate.swift in Sources */,
+				3F360E32234F54EC00E9A556 /* AgendaTableViewController.swift in Sources */,
 				3F360E2C234F468300E9A556 /* Event.swift in Sources */,
 				3F360E2A234F31FF00E9A556 /* AgendaTableViewCell.swift in Sources */,
 			);

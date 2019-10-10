@@ -10,7 +10,7 @@
         <!--Browse-->
         <scene sceneID="XcZ-fi-apm">
             <objects>
-                <tableViewController id="Dzz-1s-40j" sceneMemberID="viewController">
+                <tableViewController id="Dzz-1s-40j" customClass="EventTableViewController" customModule="Averi" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kDJ-fg-cSl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,17 +29,17 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NS8-49-B87">
                                                     <rect key="frame" x="0.0" y="0.0" width="88.5" height="128"/>
                                                 </imageView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="u67-01-4Dw">
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="u67-01-4Dw">
                                                     <rect key="frame" x="96.5" y="0.0" width="75" height="128"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttf-Dx-X2I">
-                                                            <rect key="frame" x="0.0" y="0.0" width="50.5" height="26"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="50.5" height="36"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76d-VV-Fcb">
-                                                            <rect key="frame" x="0.0" y="37" width="40.5" height="23"/>
+                                                            <rect key="frame" x="0.0" y="46" width="40.5" height="36"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="23" id="mI7-Sh-ZIv"/>
                                                             </constraints>
@@ -47,17 +47,8 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mB8-N6-mwa">
-                                                            <rect key="frame" x="0.0" y="71" width="42.5" height="23"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="23" id="l4g-E2-83E"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyp-b4-Yda">
-                                                            <rect key="frame" x="0.0" y="105" width="75" height="23"/>
+                                                            <rect key="frame" x="0.0" y="92" width="75" height="36"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="23" id="5Go-uI-NQd"/>
                                                             </constraints>
@@ -80,9 +71,8 @@
                                 <connections>
                                     <outlet property="DateLabel" destination="76d-VV-Fcb" id="qo4-vv-NVc"/>
                                     <outlet property="DistanceLabel" destination="gyp-b4-Yda" id="5fq-aN-x7o"/>
-                                    <outlet property="ImageView" destination="Foi-yK-4jv" id="04I-KB-ELH"/>
+                                    <outlet property="ImageView" destination="NS8-49-B87" id="vx0-cR-h3T"/>
                                     <outlet property="NameLabel" destination="ttf-Dx-X2I" id="vqo-5K-g1D"/>
-                                    <outlet property="TimeLabel" destination="mB8-N6-mwa" id="yi8-v0-zl9"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -172,7 +162,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="0il-GP-bzE">
-                                                    <rect key="frame" x="-1" y="-60" width="414" height="162"/>
+                                                    <rect key="frame" x="-2" y="-60" width="414" height="162"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 </datePicker>
                                             </subviews>
@@ -344,8 +334,8 @@
         <!--Agenda-->
         <scene sceneID="9bk-pU-WzS">
             <objects>
-                <tableViewController id="dI3-5b-z0H" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="89o-Tr-vX1">
+                <tableViewController id="dI3-5b-z0H" customClass="AgendaTableViewController" customModule="Averi" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="89o-Tr-vX1" customClass="age">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -357,7 +347,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="383" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="RFn-Lk-ERx">
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="RFn-Lk-ERx">
                                             <rect key="frame" x="20" y="11" width="171.5" height="128"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XYI-h1-wjd">
@@ -367,48 +357,45 @@
                                                         <constraint firstAttribute="width" constant="88.5" id="Ed7-Gs-JND"/>
                                                     </constraints>
                                                 </imageView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="goj-F9-gaU">
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="goj-F9-gaU">
                                                     <rect key="frame" x="96.5" y="0.0" width="75" height="128"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SnZ-Ok-mmo">
-                                                            <rect key="frame" x="0.0" y="0.0" width="50.5" height="23"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="50.5" height="36"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAr-sB-uir">
-                                                            <rect key="frame" x="0.0" y="35" width="40.5" height="23"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1g-aF-F3C">
-                                                            <rect key="frame" x="0.0" y="70" width="42.5" height="23"/>
+                                                            <rect key="frame" x="0.0" y="46" width="40.5" height="36"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ute-Sn-HBa">
-                                                            <rect key="frame" x="0.0" y="105" width="75" height="23"/>
+                                                            <rect key="frame" x="0.0" y="92" width="75" height="36"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="75" id="e5i-JA-tpW"/>
-                                                    </constraints>
                                                 </stackView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="128" id="DCD-nz-RAt"/>
+                                            </constraints>
                                         </stackView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="RFn-Lk-ERx" firstAttribute="leading" secondItem="rBZ-ws-Yb8" secondAttribute="leadingMargin" id="MvK-TH-4Y6"/>
+                                        <constraint firstItem="RFn-Lk-ERx" firstAttribute="top" secondItem="rBZ-ws-Yb8" secondAttribute="topMargin" id="rKo-Jy-5U0"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="DateLabel" destination="MAr-sB-uir" id="53c-bY-xyY"/>
                                     <outlet property="DistanceLabel" destination="Ute-Sn-HBa" id="RpP-vD-h15"/>
                                     <outlet property="ImageCiew" destination="RFn-Lk-ERx" id="0HY-vY-HLS"/>
                                     <outlet property="NameLabel" destination="SnZ-Ok-mmo" id="jZm-q1-HL4"/>
-                                    <outlet property="TimeLabel" destination="d1g-aF-F3C" id="vGE-bw-Nbm"/>
                                     <segue destination="QLA-I9-0v3" kind="show" identifier="Details" id="wEX-0p-qcF"/>
                                 </connections>
                             </tableViewCell>

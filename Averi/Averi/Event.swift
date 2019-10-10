@@ -15,4 +15,5 @@ struct Event{
     var entryLimit:Int?
     var entryCost:Int?
     var details:String?
+    var poster:Int?
 }
