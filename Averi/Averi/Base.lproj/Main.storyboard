@@ -7,6 +7,35 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Details Table View Controller-->
+        <scene sceneID="x3m-dj-M5Q">
+            <objects>
+                <tableViewController id="RsO-UX-ByD" customClass="DetailsTableViewController" customModule="Averi" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fI0-y7-3IK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Details" id="Ng9-d9-tUe">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ng9-d9-tUe" id="FH1-Ba-699">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="RsO-UX-ByD" id="u3h-xa-K9G"/>
+                            <outlet property="delegate" destination="RsO-UX-ByD" id="gEe-iO-eM5"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="gam-3O-7Q4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ULA-ga-Gzl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2651" y="-267"/>
+        </scene>
         <!--Browse-->
         <scene sceneID="XcZ-fi-apm">
             <objects>
@@ -73,6 +102,7 @@
                                     <outlet property="DistanceLabel" destination="gyp-b4-Yda" id="5fq-aN-x7o"/>
                                     <outlet property="ImageView" destination="NS8-49-B87" id="vx0-cR-h3T"/>
                                     <outlet property="NameLabel" destination="ttf-Dx-X2I" id="vqo-5K-g1D"/>
+                                    <segue destination="RsO-UX-ByD" kind="show" id="f6u-Ru-ZpT"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -257,7 +287,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XXd-nm-4S9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2651" y="-390"/>
+            <point key="canvasLocation" x="2651" y="-940"/>
         </scene>
         <!--Settings-->
         <scene sceneID="g9Y-0D-84O">
@@ -273,7 +303,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0TN-g7-hQV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2651" y="258"/>
+            <point key="canvasLocation" x="2651" y="436"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="TBP-Oi-cOs">
@@ -329,7 +359,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fix-ro-ICw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="555.07246376811599" y="258.48214285714283"/>
+            <point key="canvasLocation" x="555" y="436"/>
         </scene>
         <!--Agenda-->
         <scene sceneID="9bk-pU-WzS">
@@ -412,7 +442,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x7Y-Qc-0Rk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1727.536231884058" y="257.8125"/>
+            <point key="canvasLocation" x="1728" y="436"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6TG-M8-4aK">
@@ -428,7 +458,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sd5-gt-wzl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1728" y="1057"/>
+            <point key="canvasLocation" x="1728" y="1249"/>
         </scene>
     </scenes>
     <resources>
