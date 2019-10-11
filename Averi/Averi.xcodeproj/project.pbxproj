@@ -20,6 +20,7 @@
 		3F360E2E234F479D00E9A556 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F360E2D234F479D00E9A556 /* SampleData.swift */; };
 		3F360E30234F54BF00E9A556 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F360E2F234F54BF00E9A556 /* EventTableViewController.swift */; };
 		3F360E32234F54EC00E9A556 /* AgendaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F360E31234F54EC00E9A556 /* AgendaTableViewController.swift */; };
+		3F5B9C8C23509224001D9885 /* Averi_Averi_Base.lproj_Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5B9C8A23509224001D9885 /* Averi_Averi_Base.lproj_Main.storyboard */; };
 		3F6E9AA723508DDF00AC15E6 /* CreateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E9AA623508DDF00AC15E6 /* CreateTableViewController.swift */; };
 		3FB9DE7423508B5100F4FC70 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9DE7323508B5100F4FC70 /* SettingsTableViewController.swift */; };
 		3FB9DE7623508C7C00F4FC70 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9DE7523508C7C00F4FC70 /* SettingsTableViewCell.swift */; };
@@ -41,6 +42,7 @@
 		3F360E2D234F479D00E9A556 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		3F360E2F234F54BF00E9A556 /* EventTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
 		3F360E31234F54EC00E9A556 /* AgendaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaTableViewController.swift; sourceTree = "<group>"; };
+		3F5B9C8B23509224001D9885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Averi_Averi_Base.lproj_Main.storyboard; sourceTree = "<group>"; };
 		3F6E9AA623508DDF00AC15E6 /* CreateTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTableViewController.swift; sourceTree = "<group>"; };
 		3FB9DE7323508B5100F4FC70 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		3FB9DE7523508C7C00F4FC70 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				3F360E2D234F479D00E9A556 /* SampleData.swift */,
 				3F1CDE77234F256D00BDC523 /* SceneDelegate.swift */,
 				3F1CDE7B234F256D00BDC523 /* Main.storyboard */,
+				3F5B9C8A23509224001D9885 /* Averi_Averi_Base.lproj_Main.storyboard */,
 				3F360E31234F54EC00E9A556 /* AgendaTableViewController.swift */,
 				3F360E2F234F54BF00E9A556 /* EventTableViewController.swift */,
 				3F1CDE7E234F256E00BDC523 /* Assets.xcassets */,
@@ -139,6 +142,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"averi-averi-Base",
 			);
 			mainGroup = 3F1CDE69234F256D00BDC523;
 			productRefGroup = 3F1CDE73234F256D00BDC523 /* Products */;
@@ -156,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F1CDE82234F256E00BDC523 /* LaunchScreen.storyboard in Resources */,
+				3F5B9C8C23509224001D9885 /* Averi_Averi_Base.lproj_Main.storyboard in Resources */,
 				3F1CDE7F234F256E00BDC523 /* Assets.xcassets in Resources */,
 				3F1CDE7D234F256D00BDC523 /* Main.storyboard in Resources */,
 			);
@@ -201,6 +206,14 @@
 				3F1CDE81234F256E00BDC523 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3F5B9C8A23509224001D9885 /* Averi_Averi_Base.lproj_Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F5B9C8B23509224001D9885 /* Base */,
+			);
+			name = Averi_Averi_Base.lproj_Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
