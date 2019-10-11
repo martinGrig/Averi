@@ -126,7 +126,7 @@
         <!--Create-->
         <scene sceneID="kbh-RL-kRm">
             <objects>
-                <tableViewController id="3jj-qQ-gQH" sceneMemberID="viewController">
+                <tableViewController id="3jj-qQ-gQH" customClass="CreateTableViewController" customModule="Averi" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="RRQ-zu-oTQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -192,7 +192,11 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="0il-GP-bzE">
+<<<<<<< HEAD
                                                     <rect key="frame" x="-3" y="-60" width="410" height="162"/>
+=======
+                                                    <rect key="frame" x="-3" y="-60" width="411" height="162"/>
+>>>>>>> 8dddfec70447d7371fd9ed0c3aa7d4556eb44582
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 </datePicker>
                                             </subviews>
@@ -284,6 +288,14 @@
                     <navigationItem key="navigationItem" title="Create" id="wXN-v0-h7g">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="aL0-C4-5ZO"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="DateDatePicker" destination="0il-GP-bzE" id="WnX-yi-GFE"/>
+                        <outlet property="DetailsTextField" destination="AAX-kF-T7V" id="fIJ-c8-AGL"/>
+                        <outlet property="EntryCostTextField" destination="oyK-HB-ID9" id="lgl-IT-EPW"/>
+                        <outlet property="EntryLimitTextField" destination="6Y5-SB-kYQ" id="uFg-z9-bo7"/>
+                        <outlet property="LocationTextField" destination="Mc5-kF-seU" id="SmK-va-zcu"/>
+                        <outlet property="NameTextField" destination="Ehz-XC-OLf" id="wf0-OK-0h8"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XXd-nm-4S9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
