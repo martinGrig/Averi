@@ -20,6 +20,8 @@
 		3F360E2E234F479D00E9A556 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F360E2D234F479D00E9A556 /* SampleData.swift */; };
 		3F360E30234F54BF00E9A556 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F360E2F234F54BF00E9A556 /* EventTableViewController.swift */; };
 		3F360E32234F54EC00E9A556 /* AgendaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F360E31234F54EC00E9A556 /* AgendaTableViewController.swift */; };
+		3FB9DE7423508B5100F4FC70 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9DE7323508B5100F4FC70 /* SettingsTableViewController.swift */; };
+		3FB9DE7623508C7C00F4FC70 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9DE7523508C7C00F4FC70 /* SettingsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		3F360E2D234F479D00E9A556 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		3F360E2F234F54BF00E9A556 /* EventTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
 		3F360E31234F54EC00E9A556 /* AgendaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaTableViewController.swift; sourceTree = "<group>"; };
+		3FB9DE7323508B5100F4FC70 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		3FB9DE7523508C7C00F4FC70 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 				3F360E29234F31FF00E9A556 /* AgendaTableViewCell.swift */,
 				3F1CDE79234F256D00BDC523 /* ViewController.swift */,
 				3F2C53E023508A050057C59A /* DetailsTableViewController.swift */,
+				3FB9DE7323508B5100F4FC70 /* SettingsTableViewController.swift */,
+				3FB9DE7523508C7C00F4FC70 /* SettingsTableViewCell.swift */,
 			);
 			path = Averi;
 			sourceTree = "<group>";
@@ -161,7 +167,9 @@
 			files = (
 				3F360E28234F2E9400E9A556 /* EventTableViewCell.swift in Sources */,
 				3F360E2E234F479D00E9A556 /* SampleData.swift in Sources */,
+				3FB9DE7623508C7C00F4FC70 /* SettingsTableViewCell.swift in Sources */,
 				3F360E30234F54BF00E9A556 /* EventTableViewController.swift in Sources */,
+				3FB9DE7423508B5100F4FC70 /* SettingsTableViewController.swift in Sources */,
 				3F1CDE7A234F256D00BDC523 /* ViewController.swift in Sources */,
 				3F1CDE76234F256D00BDC523 /* AppDelegate.swift in Sources */,
 				3F1CDE78234F256D00BDC523 /* SceneDelegate.swift in Sources */,
