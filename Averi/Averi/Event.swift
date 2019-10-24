@@ -17,3 +17,5 @@ struct Event{
     var details:String?
     var poster:Int?
 }
+
+
