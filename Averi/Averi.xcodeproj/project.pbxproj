@@ -13,7 +13,6 @@
 		3F1CDE7D234F256D00BDC523 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F1CDE7B234F256D00BDC523 /* Main.storyboard */; };
 		3F1CDE7F234F256E00BDC523 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F1CDE7E234F256E00BDC523 /* Assets.xcassets */; };
 		3F1CDE82234F256E00BDC523 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F1CDE80234F256E00BDC523 /* LaunchScreen.storyboard */; };
-		3F2C53E123508A050057C59A /* DetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2C53E023508A050057C59A /* DetailsTableViewController.swift */; };
 		3F360E28234F2E9400E9A556 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F360E27234F2E9400E9A556 /* EventTableViewCell.swift */; };
 		3F360E2A234F31FF00E9A556 /* AgendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F360E29234F31FF00E9A556 /* AgendaTableViewCell.swift */; };
 		3F360E2C234F468300E9A556 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F360E2B234F468300E9A556 /* Event.swift */; };
@@ -23,6 +22,7 @@
 		3F6E9AA723508DDF00AC15E6 /* CreateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E9AA623508DDF00AC15E6 /* CreateTableViewController.swift */; };
 		3FB9DE7423508B5100F4FC70 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9DE7323508B5100F4FC70 /* SettingsTableViewController.swift */; };
 		3FB9DE7623508C7C00F4FC70 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9DE7523508C7C00F4FC70 /* SettingsTableViewCell.swift */; };
+		3FC8DFA22361CD9F0004F20F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8DFA12361CD9F0004F20F /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +34,6 @@
 		3F1CDE7E234F256E00BDC523 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F1CDE81234F256E00BDC523 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F1CDE83234F256E00BDC523 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F2C53E023508A050057C59A /* DetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewController.swift; sourceTree = "<group>"; };
 		3F360E27234F2E9400E9A556 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		3F360E29234F31FF00E9A556 /* AgendaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaTableViewCell.swift; sourceTree = "<group>"; };
 		3F360E2B234F468300E9A556 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -44,6 +43,7 @@
 		3F6E9AA623508DDF00AC15E6 /* CreateTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTableViewController.swift; sourceTree = "<group>"; };
 		3FB9DE7323508B5100F4FC70 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		3FB9DE7523508C7C00F4FC70 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		3FC8DFA12361CD9F0004F20F /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,10 +89,10 @@
 				3F360E27234F2E9400E9A556 /* EventTableViewCell.swift */,
 				3F360E29234F31FF00E9A556 /* AgendaTableViewCell.swift */,
 				3F1CDE79234F256D00BDC523 /* ViewController.swift */,
-				3F2C53E023508A050057C59A /* DetailsTableViewController.swift */,
 				3FB9DE7323508B5100F4FC70 /* SettingsTableViewController.swift */,
 				3FB9DE7523508C7C00F4FC70 /* SettingsTableViewCell.swift */,
 				3F6E9AA623508DDF00AC15E6 /* CreateTableViewController.swift */,
+				3FC8DFA12361CD9F0004F20F /* DetailsViewController.swift */,
 			);
 			path = Averi;
 			sourceTree = "<group>";
@@ -176,10 +176,10 @@
 				3F1CDE7A234F256D00BDC523 /* ViewController.swift in Sources */,
 				3F1CDE76234F256D00BDC523 /* AppDelegate.swift in Sources */,
 				3F1CDE78234F256D00BDC523 /* SceneDelegate.swift in Sources */,
-				3F2C53E123508A050057C59A /* DetailsTableViewController.swift in Sources */,
 				3F360E32234F54EC00E9A556 /* AgendaTableViewController.swift in Sources */,
 				3F360E2C234F468300E9A556 /* Event.swift in Sources */,
 				3F6E9AA723508DDF00AC15E6 /* CreateTableViewController.swift in Sources */,
+				3FC8DFA22361CD9F0004F20F /* DetailsViewController.swift in Sources */,
 				3F360E2A234F31FF00E9A556 /* AgendaTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
