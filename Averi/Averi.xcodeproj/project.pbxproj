@@ -23,9 +23,11 @@
 		3FB9DE7423508B5100F4FC70 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9DE7323508B5100F4FC70 /* SettingsTableViewController.swift */; };
 		3FB9DE7623508C7C00F4FC70 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9DE7523508C7C00F4FC70 /* SettingsTableViewCell.swift */; };
 		3FC8DFA22361CD9F0004F20F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8DFA12361CD9F0004F20F /* DetailsViewController.swift */; };
+		F180701F3945C7A60B48C6D5 /* Pods_Averi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F136D47D88F36BC7749E094 /* Pods_Averi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BEF5FD0932ECC63992244BC /* Pods-Averi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Averi.release.xcconfig"; path = "Target Support Files/Pods-Averi/Pods-Averi.release.xcconfig"; sourceTree = "<group>"; };
 		3F1CDE72234F256D00BDC523 /* Averi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Averi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F1CDE75234F256D00BDC523 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F1CDE77234F256D00BDC523 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +46,8 @@
 		3FB9DE7323508B5100F4FC70 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		3FB9DE7523508C7C00F4FC70 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		3FC8DFA12361CD9F0004F20F /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		71B511C29E6B8513E1FC1E08 /* Pods-Averi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Averi.debug.xcconfig"; path = "Target Support Files/Pods-Averi/Pods-Averi.debug.xcconfig"; sourceTree = "<group>"; };
+		8F136D47D88F36BC7749E094 /* Pods_Averi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Averi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F180701F3945C7A60B48C6D5 /* Pods_Averi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +67,8 @@
 			children = (
 				3F1CDE74234F256D00BDC523 /* Averi */,
 				3F1CDE73234F256D00BDC523 /* Products */,
+				5BA8E7F640BC493B584543E2 /* Pods */,
+				B9349F402654097BCD3C4888 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +104,24 @@
 			path = Averi;
 			sourceTree = "<group>";
 		};
+		5BA8E7F640BC493B584543E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71B511C29E6B8513E1FC1E08 /* Pods-Averi.debug.xcconfig */,
+				2BEF5FD0932ECC63992244BC /* Pods-Averi.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B9349F402654097BCD3C4888 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F136D47D88F36BC7749E094 /* Pods_Averi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -104,9 +129,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F1CDE86234F256E00BDC523 /* Build configuration list for PBXNativeTarget "Averi" */;
 			buildPhases = (
+				23044CE144CA6DD3A56810A6 /* [CP] Check Pods Manifest.lock */,
 				3F1CDE6E234F256D00BDC523 /* Sources */,
 				3F1CDE6F234F256D00BDC523 /* Frameworks */,
 				3F1CDE70234F256D00BDC523 /* Resources */,
+				DC1949AF0A4F6706673DB371 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -162,6 +189,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23044CE144CA6DD3A56810A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Averi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC1949AF0A4F6706673DB371 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Averi/Pods-Averi-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Averi/Pods-Averi-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Averi/Pods-Averi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3F1CDE6E234F256D00BDC523 /* Sources */ = {
@@ -322,6 +391,7 @@
 		};
 		3F1CDE87234F256E00BDC523 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71B511C29E6B8513E1FC1E08 /* Pods-Averi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -340,6 +410,7 @@
 		};
 		3F1CDE88234F256E00BDC523 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BEF5FD0932ECC63992244BC /* Pods-Averi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
