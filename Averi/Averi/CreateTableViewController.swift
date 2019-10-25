@@ -16,6 +16,7 @@ class CreateTableViewController: UITableViewController {
     @IBOutlet weak var EntryLimitTextField: UITextField!
     @IBOutlet weak var EntryCostTextField: UITextField!
     @IBOutlet weak var DetailsTextField: UITextField!
+<<<<<<< HEAD
     
     let locationManager = CLLocationManager()
     
@@ -26,6 +27,26 @@ class CreateTableViewController: UITableViewController {
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestLocation()
         
+=======
+    var event : Event?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let name = NameTextField.text,
+            let location = LocationTextField.text,
+            let details = DetailsTextField.text{
+            event = Event.init(name: name, location: location, date: "14.06.2020", time: "14:30", entryLimit: 9, entryCost: 9.50, bio: details, photo: #imageLiteral(resourceName: "Party"))
+        }
+>>>>>>> fe546d443995708312d3603f24553ee62aa5b5ce
     }
     
 }
