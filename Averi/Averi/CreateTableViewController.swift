@@ -16,14 +16,35 @@ class CreateTableViewController: UITableViewController {
     @IBOutlet weak var EntryLimitTextField: UITextField!
     @IBOutlet weak var EntryCostTextField: UITextField!
     @IBOutlet weak var DetailsTextField: UITextField!
-    var e : Event?
-    var events = SampleData.generateEventData()
     
+    let locationManager = CLLocationManager()
     
-    @IBAction func Done(_ sender: Any) {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestLocation()
         
     }
     
+}
+
+
+extension CreateTableViewController : CLLocationManagerDelegate {
+    func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+        if status == .authorizedWhenInUse {
+            locationManager.requestLocation()
+        }
+    }
     
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.first {
+            print("location:: \(location)")
+        }
+    }
     
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        print("error:: \(error)")
+    }
 }
