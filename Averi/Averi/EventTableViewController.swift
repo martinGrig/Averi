@@ -52,6 +52,7 @@ class EventTableViewController: UITableViewController {
     cell.ImageView?.image = event.photo
     cell.NameLabel?.text = event.name
     cell.DateLabel?.text = event.date
+    cell.DistanceLabel?.text = event.location
     
     return cell
   }
