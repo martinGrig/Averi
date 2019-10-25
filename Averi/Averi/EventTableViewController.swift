@@ -48,17 +48,12 @@ class EventTableViewController: UITableViewController {
     }
     
 
-    @IBAction func Done(_ unwindSegue: UIStoryboardSegue) {
-        if let createViewController = unwindSegue.source as? CreateTableViewController {
-            let event = createViewController.event!
-        events.append(event)
-            
-    }
+    
         
 
     }
 
-}
+
 
 extension EventTableViewController{
     @IBAction func cancelToEventViewController(_ segue: UIStoryboardSegue) {
@@ -67,11 +62,11 @@ extension EventTableViewController{
     @IBAction func saveEventDetail(_ segue: UIStoryboardSegue) {
         
         guard let createViewController = segue.source as? CreateTableViewController,
-            let player = createViewController.event else {
+            let event = createViewController.event else {
                 return
         }
         
-        events.append(player)
+        events.append(event)
         
         // update the tableView
         let indexPath = IndexPath(row: events.count - 1, section: 0)
