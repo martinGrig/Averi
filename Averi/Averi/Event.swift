@@ -6,16 +6,17 @@
 //  Copyright © 2019 Dimitar Ivanov. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Event{
-    var name:String?
-    var location:String?
-    var date:String?
-    var entryLimit:Int?
-    var entryCost:Int?
-    var details:String?
-    var poster:Int?
+    let name: String
+    let location: String
+    let date: String
+    let time: String
+    let entryLimit: Int
+    let entryCost: Float
+    let bio: String
+    let photo: UIImage
 }
 
 

@@ -18,13 +18,20 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var BioLabel: UILabel!
     @IBOutlet weak var MapView: MKMapView!
     @IBOutlet weak var JoinButton: UIButton!
-    var events = SampleData.generateEventData()
-
+    var event : Event?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        NameLabel.text = "Name:"
-        BioLabel.text = "Bio: djkabhsjdhajkshdjkahsjdkhajkshdkjasjkdhaskjhdkjashdjkahskjdhaskjdhjakshdkajshdkjahsjkdhakshdjkashdkj"
         // Do any additional setup after loading the view.
+        
+        ImageView?.image = event?.photo
+        NameLabel?.text = "Name: \(event?.name ?? "")"
+        DistanceLabel?.text = "Destination: \(event?.location ?? "")"
+        DateLabel?.text = "Date: \(event?.date ?? "")"
+        BioLabel?.text = "Bio: \(event?.bio ?? "")"
+        TimeLabel?.text = "Time: \(event?.time ?? "")"
+        
+        
     }
     
 
