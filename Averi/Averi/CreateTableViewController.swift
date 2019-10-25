@@ -15,8 +15,8 @@ class CreateTableViewController: UITableViewController {
     @IBOutlet weak var EntryLimitTextField: UITextField!
     @IBOutlet weak var EntryCostTextField: UITextField!
     @IBOutlet weak var DetailsTextField: UITextField!
-    var e : Event?
-    var events = SampleData.generateEventData()
+    var event : Event?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,8 +26,13 @@ class CreateTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-    @IBAction func Done(_ sender: Any) {
-        
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let name = NameTextField.text,
+            let location = LocationTextField.text,
+            let details = DetailsTextField.text{
+            event = Event.init(name: name, location: location, date: "14.06.2020", time: "14:30", entryLimit: 9, entryCost: 9.50, bio: details, photo: #imageLiteral(resourceName: "Party"))
+        }
     }
     
     // MARK: - Table view data source

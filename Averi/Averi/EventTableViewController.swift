@@ -10,7 +10,7 @@ import UIKit
 
 class EventTableViewController: UITableViewController {
 //var events = SampleData.generateEventData()
-    let events: [Event] = [
+    var events: [Event] = [
         Event(name: "Party in the garden", location: "Garden", date: "14.01.2020", time: "11:00", entryLimit: 5, entryCost: 5.5, bio: "Super duper cool party in the garden", photo: #imageLiteral(resourceName: "Party")),
         Event(name: "Party in the pool", location: "Pool", date: "15.02.2020", time: "12:00", entryLimit: 6, entryCost: 5.6, bio: "Super duper cool party in the pool", photo: #imageLiteral(resourceName: "Party")),
         Event(name: "Party in Eindhoven", location: "Eindhoven", date: "16.03.2020", time: "13:00", entryLimit: 7, entryCost: 6.5, bio: "Super duper cool party in Eindhoven", photo: #imageLiteral(resourceName: "Party")),
@@ -39,7 +39,9 @@ class EventTableViewController: UITableViewController {
 //        let indexPath = IndexPath(row: players.count - 1, section: 0)
 //        tableView.insertRows(at: [indexPath], with: .automatic)
 //    }
-
+  
+        
+    
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return events.count
@@ -65,7 +67,16 @@ class EventTableViewController: UITableViewController {
         }
         detailsViewController.event = events[index]
     }
+    
+
+    @IBAction func Done(_ unwindSegue: UIStoryboardSegue) {
+        if let createViewController = unwindSegue.source as? CreateTableViewController {
+            let event = createViewController.event!
+        events.append(event)
+            
+    }
+    
+
+    }
 }
-
-
-
+        
