@@ -20,44 +20,23 @@ class EventTableViewController: UITableViewController {
         Event(name: "Party in Plovdiv", location: "Plovdiv", date: "20.07.2020", time: "17:00", entryLimit: 11, entryCost: 11.5, bio: "Super duper cool party in Plovdiv", photo: #imageLiteral(resourceName: "Party"))
     ]
 
-
-//extension EventTableViewController {
-    
-//    @IBAction func cancelToPlayersViewController(_ segue: UIStoryboardSegue) {
-//    }
-//
-//    @IBAction func savePlayerDetail(_ segue: UIStoryboardSegue) {
-//
-//        guard let playerDetailsViewController = segue.source as? PlayerDetailsTableViewController,
-//            let player = playerDetailsViewController.player else {
-//                return
-//        }
-//
-//        players.append(player)
-//
-//        // update the tableView
-//        let indexPath = IndexPath(row: players.count - 1, section: 0)
-//        tableView.insertRows(at: [indexPath], with: .automatic)
-//    }
+   
   
-        
-    
-  
-  override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return events.count
-  }
-  
-  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let event = events[indexPath.row]
-    let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell",
-                                             for: indexPath) as! EventTableViewCell
-    cell.ImageView?.image = event.photo
-    cell.NameLabel?.text = event.name
-    cell.DateLabel?.text = event.date
-    cell.DistanceLabel?.text = event.location
-    
-    return cell
-  }
+//  override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//    return events.count
+//  }
+//
+//  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//    let event = events[indexPath.row]
+//    let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell",
+//                                             for: indexPath) as! EventTableViewCell
+//    cell.ImageView?.image = event.photo
+//    cell.NameLabel?.text = event.name
+//    cell.DateLabel?.text = event.date
+//    cell.DistanceLabel?.text = event.location
+//
+//    return cell
+//  }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let detailsViewController = segue.destination as? DetailsViewController,
@@ -75,8 +54,43 @@ class EventTableViewController: UITableViewController {
         events.append(event)
             
     }
-    
+        
 
     }
+
 }
+
+extension EventTableViewController{
+    @IBAction func cancelToEventViewController(_ segue: UIStoryboardSegue) {
+    }
+    
+    @IBAction func saveEventDetail(_ segue: UIStoryboardSegue) {
         
+        guard let createViewController = segue.source as? CreateTableViewController,
+            let player = createViewController.event else {
+                return
+        }
+        
+        events.append(player)
+        
+        // update the tableView
+        let indexPath = IndexPath(row: events.count - 1, section: 0)
+        tableView.insertRows(at: [indexPath], with: .automatic)
+    }
+    
+override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+  return events.count
+}
+
+override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+  let event = events[indexPath.row]
+  let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell",
+                                           for: indexPath) as! EventTableViewCell
+  cell.ImageView?.image = event.photo
+  cell.NameLabel?.text = event.name
+  cell.DateLabel?.text = event.date
+  cell.DistanceLabel?.text = event.location
+  
+  return cell
+}
+}

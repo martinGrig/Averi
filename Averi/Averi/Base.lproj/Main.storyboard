@@ -196,7 +196,7 @@
                     <navigationItem key="navigationItem" title="Browse" id="VE1-2A-hJ2">
                         <barButtonItem key="rightBarButtonItem" title="Create" image="plus" catalog="system" id="lA9-je-Y66">
                             <connections>
-                                <segue destination="3jj-qQ-gQH" kind="show" id="m96-0a-oti"/>
+                                <segue destination="YqG-xf-YL1" kind="show" id="m96-0a-oti"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -216,7 +216,7 @@
                         <sections>
                             <tableViewSection headerTitle="Name" id="QTK-mF-WWF">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="aos-u1-BFJ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NameCell" id="aos-u1-BFJ">
                                         <rect key="frame" x="0.0" y="55.333332061767578" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aos-u1-BFJ" id="jNw-90-KxC">
@@ -241,7 +241,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Location" id="Xmo-p5-x3n">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Klo-l9-ZfM">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NameCell" id="Klo-l9-ZfM">
                                         <rect key="frame" x="0.0" y="154.83333206176758" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Klo-l9-ZfM" id="CFa-nT-haa">
@@ -266,7 +266,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Date" id="hIh-2A-cDm">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="DXq-S3-hNC">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DateCell" id="DXq-S3-hNC">
                                         <rect key="frame" x="0.0" y="254.33333206176758" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DXq-S3-hNC" id="u92-Gt-U9n">
@@ -274,7 +274,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="0il-GP-bzE">
-                                                    <rect key="frame" x="-8" y="-60" width="410" height="162"/>
+                                                    <rect key="frame" x="-9" y="-60" width="410" height="162"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 </datePicker>
                                             </subviews>
@@ -284,7 +284,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Entry Limit" id="xS2-RY-kh9">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Y3V-Th-Ms9">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EntryLimitCell" id="Y3V-Th-Ms9">
                                         <rect key="frame" x="0.0" y="353.83333206176758" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Y3V-Th-Ms9" id="6c9-iW-jgz">
@@ -309,7 +309,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Entry Cost" id="5dt-xi-mO1">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="VXq-Hd-4tR">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EntryCostCell" id="VXq-Hd-4tR">
                                         <rect key="frame" x="0.0" y="453.33333206176758" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VXq-Hd-4tR" id="ILw-4e-YF8">
@@ -334,7 +334,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Details" id="tXY-x2-W76">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="afK-EX-c6s">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailsCell" id="afK-EX-c6s">
                                         <rect key="frame" x="0.0" y="552.83333206176758" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="afK-EX-c6s" id="7yh-3l-eMu">
@@ -364,7 +364,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Create" id="wXN-v0-h7g">
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="aL0-C4-5ZO"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="hAo-lV-WQ0">
+                            <connections>
+                                <segue destination="e0W-k7-Zlb" kind="unwind" unwindAction="cancelToEventViewController:" id="w7M-th-eyv"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="aL0-C4-5ZO">
+                            <connections>
+                                <segue destination="e0W-k7-Zlb" kind="unwind" unwindAction="saveEventDetail:" id="JA5-R8-POo"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="DateDatePicker" destination="0il-GP-bzE" id="WnX-yi-GFE"/>
@@ -376,8 +385,9 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XXd-nm-4S9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="e0W-k7-Zlb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2651" y="-940"/>
+            <point key="canvasLocation" x="3548" y="-940"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="TBP-Oi-cOs">
@@ -562,6 +572,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sd5-gt-wzl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1728" y="1249"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Zev-l1-3Fx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YqG-xf-YL1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="zMw-Ez-wia"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9Hz-nx-ecY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3jj-qQ-gQH" kind="relationship" relationship="rootViewController" id="qej-5J-P7P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SHH-gZ-GAy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2650.7246376811595" y="-940.17857142857133"/>
         </scene>
     </scenes>
     <resources>
