@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F1299C423632FA200F66CCA /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1299C323632FA200F66CCA /* LocationViewController.swift */; };
 		3F1CDE76234F256D00BDC523 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1CDE75234F256D00BDC523 /* AppDelegate.swift */; };
 		3F1CDE78234F256D00BDC523 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1CDE77234F256D00BDC523 /* SceneDelegate.swift */; };
 		3F1CDE7A234F256D00BDC523 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1CDE79234F256D00BDC523 /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		2BEF5FD0932ECC63992244BC /* Pods-Averi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Averi.release.xcconfig"; path = "Target Support Files/Pods-Averi/Pods-Averi.release.xcconfig"; sourceTree = "<group>"; };
+		3F1299C323632FA200F66CCA /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		3F1CDE72234F256D00BDC523 /* Averi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Averi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F1CDE75234F256D00BDC523 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F1CDE77234F256D00BDC523 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				3FB9DE7523508C7C00F4FC70 /* SettingsTableViewCell.swift */,
 				3F6E9AA623508DDF00AC15E6 /* CreateTableViewController.swift */,
 				3FC8DFA12361CD9F0004F20F /* DetailsViewController.swift */,
+				3F1299C323632FA200F66CCA /* LocationViewController.swift */,
 			);
 			path = Averi;
 			sourceTree = "<group>";
@@ -110,7 +113,6 @@
 				71B511C29E6B8513E1FC1E08 /* Pods-Averi.debug.xcconfig */,
 				2BEF5FD0932ECC63992244BC /* Pods-Averi.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -244,6 +246,7 @@
 				3FB9DE7423508B5100F4FC70 /* SettingsTableViewController.swift in Sources */,
 				3F1CDE7A234F256D00BDC523 /* ViewController.swift in Sources */,
 				3F1CDE76234F256D00BDC523 /* AppDelegate.swift in Sources */,
+				3F1299C423632FA200F66CCA /* LocationViewController.swift in Sources */,
 				3F1CDE78234F256D00BDC523 /* SceneDelegate.swift in Sources */,
 				3F360E32234F54EC00E9A556 /* AgendaTableViewController.swift in Sources */,
 				3F360E2C234F468300E9A556 /* Event.swift in Sources */,

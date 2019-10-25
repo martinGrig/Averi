@@ -11,7 +11,8 @@ import MapKit
 
 class CreateTableViewController: UITableViewController {
     @IBOutlet weak var NameTextField: UITextField!
-    @IBOutlet weak var LocationTextField: UITextField!
+    
+    @IBOutlet weak var LocationLabel: UILabel!
     @IBOutlet weak var DateDatePicker: UIDatePicker!
     @IBOutlet weak var EntryLimitTextField: UITextField!
     @IBOutlet weak var EntryCostTextField: UITextField!
@@ -34,7 +35,7 @@ class CreateTableViewController: UITableViewController {
             
             if segue.identifier == "SavePlayerDetail",
                 let name = NameTextField.text,
-                let location = LocationTextField.text,
+                let location = LocationLabel.text,
                 let details = DetailsTextField.text {
                 event = Event.init(name: name, location: location, date: "14.06.2020", time: "14:30", entryLimit: 9, entryCost: 9.50, bio: details, photo: #imageLiteral(resourceName: "Party"))
             }
