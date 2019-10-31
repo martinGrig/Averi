@@ -422,6 +422,10 @@
                         <viewLayoutGuide key="safeArea" id="mSv-dB-lrL"/>
                     </view>
                     <navigationItem key="navigationItem" id="fs1-3d-iVe"/>
+                    <connections>
+                        <outlet property="MapView" destination="GxM-17-wd7" id="86s-82-749"/>
+                        <outlet property="SearchBar" destination="z4X-kO-jbg" id="1MW-tm-r1g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s21-Lv-NRD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
