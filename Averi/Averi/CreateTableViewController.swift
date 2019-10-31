@@ -19,7 +19,7 @@ class CreateTableViewController: UITableViewController {
     @IBOutlet weak var DetailsTextField: UITextField!
     
     var event : Event?
-    
+    var imagePicker = UIImagePickerController()
     
     var dateFormatter: DateFormatter {
         let formatter = DateFormatter()
@@ -31,6 +31,7 @@ class CreateTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 //        locationManager.delegate = self
 //        locationManager.desiredAccuracy = kCLLocationAccuracyBest
 //        locationManager.requestWhenInUseAuthorization()
@@ -39,7 +40,15 @@ class CreateTableViewController: UITableViewController {
     
     }
         
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    @IBAction func image(_ sender: Any) {
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.allowsEditing = true
+        present(imagePicker, animated: true, completion: nil)
+        
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
            let formatter = DateFormatter()
            formatter.dateFormat = "dd.MM.yyyy"
             let formatterr = DateFormatter()
