@@ -63,7 +63,7 @@ class CreateTableViewController: UITableViewController, UIImagePickerControllerD
             let datee = formatter.string(from: DateDatePicker.date)
             let timee = formatterr.string(from: DateDatePicker.date)
             let textfieldInt: Int? = Int(EntryLimitTextField.text!)
-            let textfieldFloat: Float? = Float(EntryLimitTextField.text!)
+            let textfieldFloat: Double? = Double(EntryCostTextField.text!)
             if segue.identifier == "SavePlayerDetail",
                 let name = NameTextField.text,
                 let location = LocationLabel.text,

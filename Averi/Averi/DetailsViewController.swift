@@ -18,6 +18,9 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var BioLabel: UILabel!
     @IBOutlet weak var MapView: MKMapView!
     @IBOutlet weak var JoinButton: UIButton!
+    @IBOutlet weak var EntryLimitLabel: UILabel!
+    @IBOutlet weak var EntryFeeLimit: UILabel!
+    
     var event : Event?
     
     override func viewDidLoad() {
@@ -30,7 +33,8 @@ class DetailsViewController: UIViewController {
         DateLabel?.text = "Date: \(event?.date ?? "")"
         BioLabel?.text = "Bio: \(event?.bio ?? "")"
         TimeLabel?.text = "Time: \(event?.time ?? "")"
-        
+        EntryLimitLabel?.text = "Entry Limit: \(event?.entryLimit ?? 0)"
+        EntryFeeLimit?.text = "Entry Fee: \(event?.entryCost ?? 0)$"
         
     }
     
