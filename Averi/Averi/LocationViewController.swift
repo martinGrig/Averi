@@ -1,5 +1,6 @@
 import UIKit
 import MapKit
+import CoreLocation
 
 class LocationViewController: UIViewController {
     @IBOutlet weak var SearchBar: UISearchBar!
@@ -26,7 +27,7 @@ extension LocationViewController : CLLocationManagerDelegate {
     }
 
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if locations.first != nil {
+        if let location = locations.first {
             print("location:: (location)")
         }
     }

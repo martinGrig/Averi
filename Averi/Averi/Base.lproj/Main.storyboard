@@ -263,7 +263,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="XIS-TR-Xhd" kind="show" id="c67-NL-XJx"/>
+                                            <segue destination="XIS-TR-Xhd" kind="show" identifier="СховЛоцатион" id="c67-NL-XJx"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
