@@ -59,7 +59,7 @@ class CreateTableViewController: UITableViewController, UIImagePickerControllerD
            let formatter = DateFormatter()
            formatter.dateFormat = "dd.MM.yyyy"
             let formatterr = DateFormatter()
-            formatterr.dateFormat = "hh:mm a"
+            formatterr.dateFormat = "HH:mm"
             let datee = formatter.string(from: DateDatePicker.date)
             let timee = formatterr.string(from: DateDatePicker.date)
             let textfieldInt: Int? = Int(EntryLimitTextField.text!)

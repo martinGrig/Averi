@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import EventKit
 
 class DetailsViewController: UIViewController {
     @IBOutlet weak var ImageView: UIImageView!
@@ -36,9 +37,71 @@ class DetailsViewController: UIViewController {
         EntryLimitLabel?.text = "Entry Limit: \(event?.entryLimit ?? 0)"
         EntryFeeLimit?.text = "Entry Fee: \(event?.entryCost ?? 0)$"
         
+        
+        
+        
+    }
+    
+    func insertEvent(store: EKEventStore) {
+        // 1
+        let calendars = store.calendars(for: .event)
+            
+        for calendar in calendars {
+            // 2
+            if calendar.title == "ioscreator" {
+                // 3
+                
+                let formatter = DateFormatter()
+                formatter.dateFormat = "dd.MM.yyyy HH:mm"
+                let startDateTime = formatter.date(from: "\(event?.date ?? "") \(event?.time ?? "")")
+                
+                let startDate = startDateTime
+                // 2 hours
+                let endDate = startDateTime!.addingTimeInterval(2 * 60 * 60)
+                    
+                // 4
+                let event = EKEvent(eventStore: store)
+                event.calendar = calendar
+                    
+                event.title = self.event?.name
+                event.startDate = startDate
+                event.endDate = endDate
+                    
+                // 5
+                do {
+                    try store.save(event, span: .thisEvent)
+                }
+                catch {
+                   print("Error saving event in calendar")             }
+                }
+        }
     }
     
 
+    @IBAction func JoinClicked(_ sender: Any) {
+        
+        let eventStore = EKEventStore()
+            
+        // 2
+        switch EKEventStore.authorizationStatus(for: .event) {
+        case .authorized:
+            insertEvent(store: eventStore)
+            case .denied:
+                print("Access denied")
+            case .notDetermined:
+            // 3
+                eventStore.requestAccess(to: .event, completion:
+                  {[weak self] (granted: Bool, error: Error?) -> Void in
+                      if granted {
+                        self!.insertEvent(store: eventStore)
+                      } else {
+                            print("Access denied")
+                      }
+                })
+                default:
+                    print("Case default")
+        }
+    }
     /*
     // MARK: - Navigation
 
@@ -49,4 +112,13 @@ class DetailsViewController: UIViewController {
     }
     */
 
+}
+
+extension String {
+    /// Returns a date from a string in MMMM dd, yyyy. Will return today's date if input is invalid.
+    var asDate: Date {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd.MM.yyyy"
+        return formatter.date(from: self) ?? Date()
+    }
 }
