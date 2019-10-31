@@ -1,10 +1,9 @@
 import UIKit
 import MapKit
-import CoreLocation
 
 class LocationViewController: UIViewController {
     @IBOutlet weak var SearchBar: UISearchBar!
-    @IBOutlet weak var MapView: MKMapView!
+    @IBOutlet weak var mapView: MKMapView!
     
     let locationManager = CLLocationManager()
     
@@ -28,7 +27,9 @@ extension LocationViewController : CLLocationManagerDelegate {
 
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
-            print("location:: (location)")
+            let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+            let region = MKCoordinateRegion(center: location.coordinate, span: span)
+            mapView.setRegion(region, animated: true)
         }
     }
 
