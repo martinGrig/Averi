@@ -2,10 +2,10 @@ import UIKit
 import MapKit
 
 class LocationViewController: UIViewController {
-    @IBOutlet weak var SearchBar: UISearchBar!
+    let locationManager = CLLocationManager()
     @IBOutlet weak var mapView: MKMapView!
     
-    let locationManager = CLLocationManager()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,13 +19,13 @@ class LocationViewController: UIViewController {
 
 }
 extension LocationViewController : CLLocationManagerDelegate {
-    func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+    private func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         if status == .authorizedWhenInUse {
             locationManager.requestLocation()
         }
     }
 
-    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    private func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
             let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
             let region = MKCoordinateRegion(center: location.coordinate, span: span)
@@ -33,7 +33,7 @@ extension LocationViewController : CLLocationManagerDelegate {
         }
     }
 
-    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+    private func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
         print("error:: (error)")
     }
 }
