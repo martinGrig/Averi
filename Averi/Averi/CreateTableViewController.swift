@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import MapKit
+
 
 class CreateTableViewController: UITableViewController {
     @IBOutlet weak var NameTextField: UITextField!
@@ -19,7 +19,7 @@ class CreateTableViewController: UITableViewController {
     @IBOutlet weak var DetailsTextField: UITextField!
     
     var event : Event?
-    let locationManager = CLLocationManager()
+    
     
     var dateFormatter: DateFormatter {
         let formatter = DateFormatter()
