@@ -1,11 +1,3 @@
-//
-//  LocationViewController.swift
-//  Averi
-//
-//  Created by Student on 25/10/2019.
-//  Copyright © 2019 Dimitar Ivanov. All rights reserved.
-//
-
 import UIKit
 import MapKit
 
@@ -27,19 +19,19 @@ class LocationViewController: UIViewController {
 
 }
 extension LocationViewController : CLLocationManagerDelegate {
-    private func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+    func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         if status == .authorizedWhenInUse {
             locationManager.requestLocation()
         }
     }
 
-    private func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if locations.first != nil {
             print("location:: (location)")
         }
     }
 
-    private func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
         print("error:: (error)")
     }
 }
