@@ -21,6 +21,14 @@ class CreateTableViewController: UITableViewController {
     var event : Event?
     let locationManager = CLLocationManager()
     
+    var dateFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .long
+        return formatter
+    }
+
+    private var birthDate = Date()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 //        locationManager.delegate = self
@@ -32,12 +40,17 @@ class CreateTableViewController: UITableViewController {
     }
         
         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            
+           let formatter = DateFormatter()
+           formatter.dateFormat = "dd.MM.yyyy"
+            let formatterr = DateFormatter()
+            formatterr.dateFormat = "hh:mm a"
+            let datee = formatter.string(from: DateDatePicker.date)
+            let timee = formatterr.string(from: DateDatePicker.date)
             if segue.identifier == "SavePlayerDetail",
                 let name = NameTextField.text,
                 let location = LocationLabel.text,
                 let details = DetailsTextField.text {
-                event = Event.init(name: name, location: location, date: "14.06.2020", time: "14:30", entryLimit: 9, entryCost: 9.50, bio: details, photo: #imageLiteral(resourceName: "Party"))
+                event = Event.init(name: name, location: location, date: datee, time: timee, entryLimit: 9, entryCost: 9.50, bio: details, photo: #imageLiteral(resourceName: "Party"))
             }
 //        if let name = NameTextField.text,
 //            let location = LocationTextField.text,
