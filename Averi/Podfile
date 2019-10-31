@@ -7,4 +7,5 @@ target 'Averi' do
 
   # Pods for Averi
   pod 'GooglePlaces'
+  pod 'GoogleMaps'
 end

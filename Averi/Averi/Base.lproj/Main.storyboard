@@ -448,27 +448,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Chn-Qj-A4n">
-                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Chn-Qj-A4n">
+                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="SHQ-qL-PkO">
-                                <rect key="frame" x="0.0" y="132" width="414" height="781"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="SHQ-qL-PkO">
+                                <rect key="frame" x="0.0" y="144" width="414" height="752"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Chn-Qj-A4n" firstAttribute="top" secondItem="sKh-Je-H1M" secondAttribute="top" id="76Q-JO-xNz"/>
+                            <constraint firstItem="SHQ-qL-PkO" firstAttribute="top" secondItem="Chn-Qj-A4n" secondAttribute="bottom" id="9Ju-kw-eCR"/>
+                            <constraint firstItem="Chn-Qj-A4n" firstAttribute="trailing" secondItem="sKh-Je-H1M" secondAttribute="trailing" id="AsC-24-99M"/>
+                            <constraint firstItem="SHQ-qL-PkO" firstAttribute="trailing" secondItem="sKh-Je-H1M" secondAttribute="trailing" id="Mu1-mv-th2"/>
+                            <constraint firstAttribute="bottom" secondItem="SHQ-qL-PkO" secondAttribute="bottom" id="dgD-Wp-VAP"/>
+                            <constraint firstItem="SHQ-qL-PkO" firstAttribute="leading" secondItem="sKh-Je-H1M" secondAttribute="leading" id="haK-Gb-sMv"/>
+                            <constraint firstItem="Chn-Qj-A4n" firstAttribute="leading" secondItem="sKh-Je-H1M" secondAttribute="leading" id="tBT-Cd-3gL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="sKh-Je-H1M"/>
                     </view>
                     <navigationItem key="navigationItem" id="2yN-Ws-tSJ"/>
-                    <connections>
-                        <outlet property="mapView" destination="SHQ-qL-PkO" id="EeN-NH-ApE"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1J3-S0-UmD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4514" y="-940"/>
+            <point key="canvasLocation" x="4513.04347826087" y="-940.17857142857133"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="TBP-Oi-cOs">
