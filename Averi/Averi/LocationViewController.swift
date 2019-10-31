@@ -2,10 +2,9 @@ import UIKit
 import MapKit
 
 class LocationViewController: UIViewController {
-    @IBOutlet weak var SearchBar: UISearchBar!
-    @IBOutlet weak var mapView: MKMapView!
-    
     let locationManager = CLLocationManager()
+    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +23,7 @@ extension LocationViewController : CLLocationManagerDelegate {
             locationManager.requestLocation()
         }
     }
-
+    
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
             let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
@@ -32,8 +31,8 @@ extension LocationViewController : CLLocationManagerDelegate {
             mapView.setRegion(region, animated: true)
         }
     }
-
+    
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
-        print("error:: (error)")
+        print("error:: \(error)")
     }
 }
