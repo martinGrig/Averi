@@ -46,11 +46,13 @@ class CreateTableViewController: UITableViewController {
             formatterr.dateFormat = "hh:mm a"
             let datee = formatter.string(from: DateDatePicker.date)
             let timee = formatterr.string(from: DateDatePicker.date)
+            let textfieldInt: Int? = Int(EntryLimitTextField.text!)
+            let textfieldFloat: Float? = Float(EntryLimitTextField.text!)
             if segue.identifier == "SavePlayerDetail",
                 let name = NameTextField.text,
                 let location = LocationLabel.text,
                 let details = DetailsTextField.text {
-                event = Event.init(name: name, location: location, date: datee, time: timee, entryLimit: 9, entryCost: 9.50, bio: details, photo: #imageLiteral(resourceName: "Party"))
+                event = Event.init(name: name, location: location, date: datee, time: timee, entryLimit: textfieldInt!, entryCost: textfieldFloat!, bio: details, photo: #imageLiteral(resourceName: "Party"))
             }
 //        if let name = NameTextField.text,
 //            let location = LocationTextField.text,
