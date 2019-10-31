@@ -263,7 +263,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="3J1-xY-hNm" kind="show" id="TPX-XX-Fd2"/>
+                                            <segue destination="eaf-0o-zdc" kind="show" id="D9F-y6-d6s"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -278,11 +278,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="0il-GP-bzE">
-<<<<<<< HEAD
                                                     <rect key="frame" x="-13" y="-60" width="409" height="162"/>
-=======
-                                                    <rect key="frame" x="-13" y="-60" width="410" height="162"/>
->>>>>>> 1e7d2556e8ba6420972f730fed83839a2f07a8c6
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 </datePicker>
                                             </subviews>
@@ -419,49 +415,35 @@
             </objects>
             <point key="canvasLocation" x="3547.826086956522" y="-940.17857142857133"/>
         </scene>
-        <!--Location-->
-        <scene sceneID="n45-sr-vEo">
+        <!--Location View Controller-->
+        <scene sceneID="Ebw-cC-Vej">
             <objects>
-                <viewController title="Location" id="XIS-TR-Xhd" customClass="LocationViewController" customModule="Averi" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="G0M-BJ-Q2y">
+                <viewController id="eaf-0o-zdc" customClass="LocationViewController" customModule="Averi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rg1-sa-IDi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="z4X-kO-jbg">
-                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Chn-Qj-A4n">
+                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GxM-17-wd7">
-                                <rect key="frame" x="0.0" y="144" width="414" height="752"/>
-                                <connections>
-                                    <outlet property="delegate" destination="XIS-TR-Xhd" id="dIp-3T-p4k"/>
-                                </connections>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="SHQ-qL-PkO">
+                                <rect key="frame" x="0.0" y="132" width="414" height="781"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="GxM-17-wd7" firstAttribute="leading" secondItem="mSv-dB-lrL" secondAttribute="leading" id="6cE-6a-XMY"/>
-                            <constraint firstItem="z4X-kO-jbg" firstAttribute="trailing" secondItem="GxM-17-wd7" secondAttribute="trailing" id="E09-M0-joB"/>
-                            <constraint firstItem="z4X-kO-jbg" firstAttribute="leading" secondItem="GxM-17-wd7" secondAttribute="leading" id="FEs-oh-Rjb"/>
-                            <constraint firstItem="z4X-kO-jbg" firstAttribute="top" secondItem="mSv-dB-lrL" secondAttribute="top" id="HgO-gy-egZ"/>
-                            <constraint firstItem="GxM-17-wd7" firstAttribute="centerX" secondItem="G0M-BJ-Q2y" secondAttribute="centerX" id="JIU-5B-VgR"/>
-                            <constraint firstAttribute="bottom" secondItem="GxM-17-wd7" secondAttribute="bottom" id="e2X-gu-kr9"/>
-                            <constraint firstItem="GxM-17-wd7" firstAttribute="top" secondItem="z4X-kO-jbg" secondAttribute="bottom" id="edf-dm-IaH"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="mSv-dB-lrL"/>
+                        <viewLayoutGuide key="safeArea" id="sKh-Je-H1M"/>
                     </view>
-                    <navigationItem key="navigationItem" id="fs1-3d-iVe">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="3MO-HT-SIu"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="uow-j9-8Pb"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="2yN-Ws-tSJ"/>
                     <connections>
-                        <outlet property="mapView" destination="GxM-17-wd7" id="guT-A3-xda"/>
-                        <outlet property="searchBar" destination="z4X-kO-jbg" id="msL-Ha-anO"/>
+                        <outlet property="mapView" destination="SHQ-qL-PkO" id="EeN-NH-ApE"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="s21-Lv-NRD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1J3-S0-UmD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5426.0869565217399" y="-940.17857142857133"/>
+            <point key="canvasLocation" x="4514" y="-940"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="TBP-Oi-cOs">
@@ -665,25 +647,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SHH-gZ-GAy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2650.7246376811595" y="-940.17857142857133"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="4tJ-x6-cKC">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3J1-xY-hNm" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="HOx-m8-cQC"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fJl-Ad-KRN">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="XIS-TR-Xhd" kind="relationship" relationship="rootViewController" id="OLD-ZT-smN"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4xE-jX-48h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4515.9420289855079" y="-940.17857142857133"/>
         </scene>
     </scenes>
     <resources>
