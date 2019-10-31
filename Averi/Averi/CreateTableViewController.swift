@@ -9,7 +9,8 @@
 import UIKit
 
 
-class CreateTableViewController: UITableViewController {
+class CreateTableViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate
+ {
     @IBOutlet weak var NameTextField: UITextField!
     
     @IBOutlet weak var LocationLabel: UILabel!
@@ -19,19 +20,12 @@ class CreateTableViewController: UITableViewController {
     @IBOutlet weak var DetailsTextField: UITextField!
     
     var event : Event?
-    var imagePicker = UIImagePickerController()
-    
-    var dateFormatter: DateFormatter {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .long
-        return formatter
-    }
-
-    private var birthDate = Date()
+    let imagePicker = UIImagePickerController()
+    var image = UIImage()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        imagePicker.delegate = self
 //        locationManager.delegate = self
 //        locationManager.desiredAccuracy = kCLLocationAccuracyBest
 //        locationManager.requestWhenInUseAuthorization()
@@ -41,11 +35,24 @@ class CreateTableViewController: UITableViewController {
     }
         
     @IBAction func image(_ sender: Any) {
-        imagePicker.sourceType = .photoLibrary
         imagePicker.allowsEditing = true
+        imagePicker.sourceType = .photoLibrary
+        
         present(imagePicker, animated: true, completion: nil)
         
         
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            image = pickedImage
+        }
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -61,7 +68,7 @@ class CreateTableViewController: UITableViewController {
                 let name = NameTextField.text,
                 let location = LocationLabel.text,
                 let details = DetailsTextField.text {
-                event = Event.init(name: name, location: location, date: datee, time: timee, entryLimit: textfieldInt!, entryCost: textfieldFloat!, bio: details, photo: #imageLiteral(resourceName: "Party"))
+                event = Event.init(name: name, location: location, date: datee, time: timee, entryLimit: textfieldInt!, entryCost: textfieldFloat!, bio: details, photo: image)
             }
 //        if let name = NameTextField.text,
 //            let location = LocationTextField.text,
