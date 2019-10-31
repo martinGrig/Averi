@@ -278,7 +278,11 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="0il-GP-bzE">
+<<<<<<< HEAD
                                                     <rect key="frame" x="-13" y="-60" width="409" height="162"/>
+=======
+                                                    <rect key="frame" x="-13" y="-60" width="410" height="162"/>
+>>>>>>> 1e7d2556e8ba6420972f730fed83839a2f07a8c6
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 </datePicker>
                                             </subviews>
@@ -357,6 +361,28 @@
                                                 <constraint firstAttribute="trailing" secondItem="AAX-kF-T7V" secondAttribute="trailing" constant="20" id="dRu-fq-o2l"/>
                                                 <constraint firstItem="AAX-kF-T7V" firstAttribute="centerY" secondItem="7yh-3l-eMu" secondAttribute="centerY" id="zQO-jT-Mse"/>
                                             </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Add Banner" id="AzX-wB-D32">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ImageCell" id="sii-80-UwK">
+                                        <rect key="frame" x="0.0" y="652.33333206176758" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sii-80-UwK" id="Te6-b6-2kW">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LbW-Sd-aWg">
+                                                    <rect key="frame" x="168" y="7" width="46" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="image:" destination="3jj-qQ-gQH" eventType="touchUpInside" id="afH-dp-dwL"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
