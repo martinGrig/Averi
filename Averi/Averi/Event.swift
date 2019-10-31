@@ -14,7 +14,7 @@ struct Event{
     let date: String
     let time: String
     let entryLimit: Int
-    let entryCost: Float
+    let entryCost: Double
     let bio: String
     let photo: UIImage
 }

@@ -38,7 +38,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="pgg-52-Nsa">
-                                <rect key="frame" x="0.0" y="334" width="414" height="429"/>
+                                <rect key="frame" x="0.0" y="396" width="414" height="367"/>
                             </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgZ-IE-jOr">
                                 <rect key="frame" x="10" y="241" width="394" height="21"/>
@@ -64,14 +64,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entry Limit:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNg-wr-XH5">
+                                <rect key="frame" x="10" y="334" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entry Fee:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUU-up-mC9">
+                                <rect key="frame" x="10" y="365" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="tuC-59-VRY" firstAttribute="trailing" secondItem="vYr-aa-t7g" secondAttribute="trailing" constant="10" id="05I-V5-LXK"/>
                             <constraint firstItem="5kx-WX-Gfe" firstAttribute="leading" secondItem="fbo-ax-avK" secondAttribute="trailing" id="1a7-0A-t0q"/>
                             <constraint firstItem="5Ql-eG-nRg" firstAttribute="top" secondItem="lx4-ZA-alh" secondAttribute="bottom" constant="10" id="1aK-mT-LTe"/>
+                            <constraint firstItem="zNg-wr-XH5" firstAttribute="leading" secondItem="tuC-59-VRY" secondAttribute="leading" constant="10" id="9Gi-dh-LWd"/>
                             <constraint firstItem="pgg-52-Nsa" firstAttribute="trailing" secondItem="tuC-59-VRY" secondAttribute="trailing" id="Crs-yu-ddI"/>
                             <constraint firstItem="pgg-52-Nsa" firstAttribute="leading" secondItem="tuC-59-VRY" secondAttribute="leading" id="GIJ-Jw-hm4"/>
+                            <constraint firstItem="tuC-59-VRY" firstAttribute="trailing" secondItem="zNg-wr-XH5" secondAttribute="trailing" constant="10" id="ISo-fL-ix4"/>
                             <constraint firstItem="KaQ-WH-tMc" firstAttribute="trailing" secondItem="tuC-59-VRY" secondAttribute="trailing" id="J59-t4-QR7"/>
                             <constraint firstItem="kgZ-IE-jOr" firstAttribute="leading" secondItem="tuC-59-VRY" secondAttribute="leading" constant="10" id="NcH-Cl-hzQ"/>
                             <constraint firstItem="KaQ-WH-tMc" firstAttribute="leading" secondItem="tuC-59-VRY" secondAttribute="leading" id="R9L-Io-5KV"/>
@@ -79,16 +93,20 @@
                             <constraint firstItem="fbo-ax-avK" firstAttribute="top" secondItem="kgZ-IE-jOr" secondAttribute="bottom" constant="10" id="Wxb-MW-YeI"/>
                             <constraint firstItem="5kx-WX-Gfe" firstAttribute="centerX" secondItem="5s9-UN-ULA" secondAttribute="centerX" id="XhK-Sj-rPW"/>
                             <constraint firstItem="tuC-59-VRY" firstAttribute="trailing" secondItem="kgZ-IE-jOr" secondAttribute="trailing" constant="10" id="YSk-xQ-qBN"/>
+                            <constraint firstItem="aUU-up-mC9" firstAttribute="top" secondItem="zNg-wr-XH5" secondAttribute="bottom" constant="10" id="aLY-UG-RmG"/>
                             <constraint firstItem="KaQ-WH-tMc" firstAttribute="top" secondItem="pgg-52-Nsa" secondAttribute="bottom" id="c0i-Na-YAG"/>
                             <constraint firstItem="lx4-ZA-alh" firstAttribute="trailing" secondItem="tuC-59-VRY" secondAttribute="trailing" id="dGW-LM-7Ft"/>
+                            <constraint firstItem="tuC-59-VRY" firstAttribute="trailing" secondItem="aUU-up-mC9" secondAttribute="trailing" constant="10" id="e3G-uc-mA2"/>
+                            <constraint firstItem="zNg-wr-XH5" firstAttribute="top" secondItem="vYr-aa-t7g" secondAttribute="bottom" constant="10" id="hCB-ss-wOK"/>
                             <constraint firstItem="lx4-ZA-alh" firstAttribute="top" secondItem="5s9-UN-ULA" secondAttribute="top" id="hrF-nC-4iC"/>
                             <constraint firstItem="tuC-59-VRY" firstAttribute="trailing" secondItem="5Ql-eG-nRg" secondAttribute="trailing" constant="10" id="lHB-GM-H7c"/>
                             <constraint firstItem="vYr-aa-t7g" firstAttribute="top" secondItem="fbo-ax-avK" secondAttribute="bottom" constant="10" id="pdw-Sb-6OS"/>
                             <constraint firstItem="fbo-ax-avK" firstAttribute="leading" secondItem="tuC-59-VRY" secondAttribute="leading" constant="10" id="qn8-Ua-GX6"/>
                             <constraint firstItem="vYr-aa-t7g" firstAttribute="leading" secondItem="tuC-59-VRY" secondAttribute="leading" constant="10" id="r4b-op-ii9"/>
-                            <constraint firstItem="pgg-52-Nsa" firstAttribute="top" secondItem="vYr-aa-t7g" secondAttribute="bottom" constant="10" id="rFc-bV-4or"/>
                             <constraint firstItem="lx4-ZA-alh" firstAttribute="leading" secondItem="tuC-59-VRY" secondAttribute="leading" id="siO-85-9Wj"/>
+                            <constraint firstItem="aUU-up-mC9" firstAttribute="leading" secondItem="tuC-59-VRY" secondAttribute="leading" constant="10" id="vXJ-Al-MxS"/>
                             <constraint firstItem="5Ql-eG-nRg" firstAttribute="leading" secondItem="tuC-59-VRY" secondAttribute="leading" constant="10" id="vZO-kq-iW3"/>
+                            <constraint firstItem="pgg-52-Nsa" firstAttribute="top" secondItem="aUU-up-mC9" secondAttribute="bottom" constant="10" id="xJv-dW-qEs"/>
                             <constraint firstItem="KaQ-WH-tMc" firstAttribute="bottom" secondItem="tuC-59-VRY" secondAttribute="bottom" id="yAq-qE-BEm"/>
                             <constraint firstItem="kgZ-IE-jOr" firstAttribute="top" secondItem="5Ql-eG-nRg" secondAttribute="bottom" constant="10" id="yyv-NA-o1C"/>
                         </constraints>
@@ -99,6 +117,8 @@
                         <outlet property="BioLabel" destination="vYr-aa-t7g" id="qN0-Vj-QGD"/>
                         <outlet property="DateLabel" destination="fbo-ax-avK" id="zZs-Ws-cCr"/>
                         <outlet property="DistanceLabel" destination="kgZ-IE-jOr" id="2b5-Lo-cAz"/>
+                        <outlet property="EntryFeeLimit" destination="aUU-up-mC9" id="edD-1U-4QB"/>
+                        <outlet property="EntryLimitLabel" destination="zNg-wr-XH5" id="Wc5-ma-K0H"/>
                         <outlet property="ImageView" destination="lx4-ZA-alh" id="bIS-pb-nqt"/>
                         <outlet property="JoinButton" destination="KaQ-WH-tMc" id="lhT-Yg-BzH"/>
                         <outlet property="MapView" destination="pgg-52-Nsa" id="34Q-8I-ukp"/>
@@ -363,22 +383,27 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Add Banner" id="AzX-wB-D32">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ImageCell" id="sii-80-UwK">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageCell" id="sii-80-UwK">
                                         <rect key="frame" x="0.0" y="652.33333206176758" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sii-80-UwK" id="Te6-b6-2kW">
-                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LbW-Sd-aWg">
-                                                    <rect key="frame" x="168" y="7" width="46" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Button"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LbW-Sd-aWg">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                                    <state key="normal" title="Choose Image"/>
                                                     <connections>
                                                         <action selector="image:" destination="3jj-qQ-gQH" eventType="touchUpInside" id="afH-dp-dwL"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="LbW-Sd-aWg" firstAttribute="leading" secondItem="Te6-b6-2kW" secondAttribute="leading" id="5CG-I7-t9a"/>
+                                                <constraint firstAttribute="bottom" secondItem="LbW-Sd-aWg" secondAttribute="bottom" id="6gz-WY-fLF"/>
+                                                <constraint firstAttribute="trailing" secondItem="LbW-Sd-aWg" secondAttribute="trailing" id="n1U-Ge-B2m"/>
+                                                <constraint firstItem="LbW-Sd-aWg" firstAttribute="top" secondItem="Te6-b6-2kW" secondAttribute="top" id="nyw-Hi-l48"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
