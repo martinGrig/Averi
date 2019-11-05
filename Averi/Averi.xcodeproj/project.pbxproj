@@ -21,6 +21,7 @@
 		3F360E30234F54BF00E9A556 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F360E2F234F54BF00E9A556 /* EventTableViewController.swift */; };
 		3F360E32234F54EC00E9A556 /* AgendaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F360E31234F54EC00E9A556 /* AgendaTableViewController.swift */; };
 		3F620ACE2371830C00691588 /* AgendaDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F620ACD2371830C00691588 /* AgendaDetailsViewController.swift */; };
+		3F620AD02371D14C00691588 /* LocationSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F620ACF2371D14C00691588 /* LocationSearchTableViewController.swift */; };
 		3F6E9AA723508DDF00AC15E6 /* CreateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E9AA623508DDF00AC15E6 /* CreateTableViewController.swift */; };
 		3FB9DE7423508B5100F4FC70 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9DE7323508B5100F4FC70 /* SettingsTableViewController.swift */; };
 		3FB9DE7623508C7C00F4FC70 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9DE7523508C7C00F4FC70 /* SettingsTableViewCell.swift */; };
@@ -46,6 +47,7 @@
 		3F360E2F234F54BF00E9A556 /* EventTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
 		3F360E31234F54EC00E9A556 /* AgendaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaTableViewController.swift; sourceTree = "<group>"; };
 		3F620ACD2371830C00691588 /* AgendaDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaDetailsViewController.swift; sourceTree = "<group>"; };
+		3F620ACF2371D14C00691588 /* LocationSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTableViewController.swift; sourceTree = "<group>"; };
 		3F6E9AA623508DDF00AC15E6 /* CreateTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTableViewController.swift; sourceTree = "<group>"; };
 		3FB9DE7323508B5100F4FC70 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		3FB9DE7523508C7C00F4FC70 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				3FC8DFA12361CD9F0004F20F /* DetailsViewController.swift */,
 				3F1299C323632FA200F66CCA /* LocationViewController.swift */,
 				3F620ACD2371830C00691588 /* AgendaDetailsViewController.swift */,
+				3F620ACF2371D14C00691588 /* LocationSearchTableViewController.swift */,
 			);
 			path = Averi;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				3FB9DE7423508B5100F4FC70 /* SettingsTableViewController.swift in Sources */,
 				3F1CDE7A234F256D00BDC523 /* ViewController.swift in Sources */,
 				3F1CDE76234F256D00BDC523 /* AppDelegate.swift in Sources */,
+				3F620AD02371D14C00691588 /* LocationSearchTableViewController.swift in Sources */,
 				3F1299C423632FA200F66CCA /* LocationViewController.swift in Sources */,
 				3F1CDE78234F256D00BDC523 /* SceneDelegate.swift in Sources */,
 				3F360E32234F54EC00E9A556 /* AgendaTableViewController.swift in Sources */,

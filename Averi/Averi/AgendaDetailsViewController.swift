@@ -1,11 +1,3 @@
-//
-//  AgendaDetailsViewController.swift
-//  Averi
-//
-//  Created by Student on 05/11/2019.
-//  Copyright © 2019 Dimitar Ivanov. All rights reserved.
-//
-
 import UIKit
 import MapKit
 import EventKit
