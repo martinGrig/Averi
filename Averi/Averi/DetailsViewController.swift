@@ -24,6 +24,20 @@ class DetailsViewController: UIViewController {
     
     var event : Event?
     
+    
+    var agendaViewController:AgendaTableViewController?
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let detailsViewController = segue.destination as? AgendaDetailsViewController
+            else {
+                return
+        }
+        detailsViewController.event = event
+        
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -36,8 +50,6 @@ class DetailsViewController: UIViewController {
         TimeLabel?.text = "Time: \(event?.time ?? "")"
         EntryLimitLabel?.text = "Entry Limit: \(event?.entryLimit ?? 0)"
         EntryFeeLimit?.text = "Entry Fee: \(event?.entryCost ?? 0)$"
-        
-        
         
         
     }
@@ -101,6 +113,10 @@ class DetailsViewController: UIViewController {
                 default:
                     print("Case default")
         }
+        
+        agendaViewController?.onUserAction(event: (event ?? nil)!)
+        
+        
     }
     /*
     // MARK: - Navigation
