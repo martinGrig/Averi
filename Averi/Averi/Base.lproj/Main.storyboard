@@ -26,7 +26,7 @@
                                 </state>
                                 <connections>
                                     <action selector="JoinClicked:" destination="5ti-kh-pZ6" eventType="touchUpInside" id="cAD-dt-7CO"/>
-                                    <segue destination="84E-Gb-KsE" kind="show" id="9dr-ln-ZPW"/>
+                                    <segue destination="84E-Gb-KsE" kind="show" id="Wkc-8D-wVw"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lx4-ZA-alh">
@@ -798,6 +798,6 @@
         <image name="plus" catalog="system" width="64" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9dr-ln-ZPW"/>
+        <segue reference="Wkc-8D-wVw"/>
     </inferredMetricsTieBreakers>
 </document>
