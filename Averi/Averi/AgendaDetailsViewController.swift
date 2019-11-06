@@ -17,13 +17,14 @@ class AgendaDetailsViewController: UIViewController {
     
     
     var event : Event?
-    
+    let annotation = MKPointAnnotation()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        annotation.coordinate = CLLocationCoordinate2D(latitude: event!.latitude, longitude: event!.longitude)
+        let coordinateRegion = MKCoordinateRegion(center: annotation.coordinate, latitudinalMeters: 1000, longitudinalMeters: 1000)
         ImageView?.image = event?.photo
         NameLabel?.text = "Name: \(event?.name ?? "")"
         DistanceLabel?.text = "Destination: \(event?.location ?? "")"
@@ -32,7 +33,8 @@ class AgendaDetailsViewController: UIViewController {
         TimeLabel?.text = "Time: \(event?.time ?? "")"
         EntryLimitLabel?.text = "Entry Limit: \(event?.entryLimit ?? 0)"
         EntryFeeLimit?.text = "Entry Fee: \(event?.entryCost ?? 0)$"
-        
+        MapView.setRegion(coordinateRegion, animated: true)
+        MapView.addAnnotation(annotation)
         
         
         

@@ -68,7 +68,7 @@ class CreateTableViewController: UITableViewController, UIImagePickerControllerD
                 let name = NameTextField.text,
                 let location = LocationLabel.text,
                 let details = DetailsTextField.text {
-                event = Event.init(name: name, location: location, date: datee, time: timee, entryLimit: textfieldInt!, entryCost: textfieldFloat!, bio: details, photo: image)
+                event = Event.init(name: name, location: location, date: datee, time: timee, entryLimit: textfieldInt!, entryCost: textfieldFloat!, bio: details, photo: image,latitude: 48.850234,longitude: 2.346018)
             }
 //        if let name = NameTextField.text,
 //            let location = LocationTextField.text,

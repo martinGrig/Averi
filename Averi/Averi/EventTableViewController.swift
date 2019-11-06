@@ -11,13 +11,13 @@ import UIKit
 class EventTableViewController: UITableViewController {
 //var events = SampleData.generateEventData()
     var events: [Event] = [
-        Event(name: "Party in the garden", location: "Garden", date: "14.01.2020", time: "11:00", entryLimit: 5, entryCost: 5.5, bio: "Super duper cool party in the garden", photo: #imageLiteral(resourceName: "Party")),
-        Event(name: "Party in the pool", location: "Pool", date: "15.02.2020", time: "12:00", entryLimit: 6, entryCost: 5.6, bio: "Super duper cool party in the pool", photo: #imageLiteral(resourceName: "Party")),
-        Event(name: "Party in Eindhoven", location: "Eindhoven", date: "16.03.2020", time: "13:00", entryLimit: 7, entryCost: 6.5, bio: "Super duper cool party in Eindhoven", photo: #imageLiteral(resourceName: "Party")),
-        Event(name: "Party on Stratum", location: "Stratum", date: "17.04.2020", time: "14:00", entryLimit: 8, entryCost: 7.5, bio: "Super duper cool party on Stratum", photo: #imageLiteral(resourceName: "Party")),
-        Event(name: "Party in Amsterdam", location: "Amsterdam", date: "18.05.2020", time: "15:00", entryLimit: 9, entryCost: 5.9, bio: "Super duper cool party in Amsterdam", photo: #imageLiteral(resourceName: "Party")),
-        Event(name: "Party in Sofia", location: "Sofia", date: "19.06.2020", time: "16:00", entryLimit: 10, entryCost: 10.5, bio: "Super duper cool party in Sofia", photo: #imageLiteral(resourceName: "Party")),
-        Event(name: "Party in Plovdiv", location: "Plovdiv", date: "20.07.2020", time: "17:00", entryLimit: 11, entryCost: 11.5, bio: "Super duper cool party in Plovdiv", photo: #imageLiteral(resourceName: "Party"))
+        Event(name: "Party in the garden", location: "Garden", date: "14.01.2020", time: "11:00", entryLimit: 5, entryCost: 5.5, bio: "Super duper cool party in the garden", photo: #imageLiteral(resourceName: "Party"),latitude: 51.64053,longitude: 5.47778),
+        Event(name: "Party in the pool", location: "Pool", date: "15.02.2020", time: "12:00", entryLimit: 6, entryCost: 5.6, bio: "Super duper cool party in the pool", photo: #imageLiteral(resourceName: "Party"),latitude: 51.74083,longitude: 5.47778),
+        Event(name: "Party in Eindhoven", location: "Eindhoven", date: "16.03.2020", time: "13:00", entryLimit: 7, entryCost: 6.5, bio: "Super duper cool party in Eindhoven", photo: #imageLiteral(resourceName: "Party"),latitude: 51.44083,longitude: 5.47778),
+        Event(name: "Party on Stratum", location: "Stratum", date: "17.04.2020", time: "14:00", entryLimit: 8, entryCost: 7.5, bio: "Super duper cool party on Stratum", photo: #imageLiteral(resourceName: "Party"),latitude: 51.436853,longitude: 5.480462),
+        Event(name: "Party in Amsterdam", location: "Amsterdam", date: "18.05.2020", time: "15:00", entryLimit: 9, entryCost: 5.9, bio: "Super duper cool party in Amsterdam", photo: #imageLiteral(resourceName: "Party"),latitude: 52.376256,longitude: 4.901260),
+        Event(name: "Party in Sofia", location: "Sofia", date: "19.06.2020", time: "16:00", entryLimit: 10, entryCost: 10.5, bio: "Super duper cool party in Sofia", photo: #imageLiteral(resourceName: "Party"),latitude: 42.695980,longitude: 23.319716),
+        Event(name: "Party in Plovdiv", location: "Plovdiv", date: "20.07.2020", time: "17:00", entryLimit: 11, entryCost: 11.5, bio: "Super duper cool party in Plovdiv", photo: #imageLiteral(resourceName: "Party"),latitude: 42.143997,longitude: 24.749572)
     ]
 
    

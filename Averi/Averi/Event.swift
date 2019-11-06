@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 struct Event{
     let name: String
@@ -17,6 +18,8 @@ struct Event{
     let entryCost: Double
     let bio: String
     let photo: UIImage
+    let latitude: Double
+    let longitude: Double
 }
 
 

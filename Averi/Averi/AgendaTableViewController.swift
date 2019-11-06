@@ -12,9 +12,9 @@ class AgendaTableViewController: UITableViewController {
     
     
     var events: [Event] = [
-    Event(name: "Party in the garden", location: "Garden", date: "14.01.2020", time: "11:00", entryLimit: 5, entryCost: 5.5, bio: "Super duper cool party in the garden", photo: #imageLiteral(resourceName: "Party")),
-    Event(name: "Party in the pool", location: "Pool", date: "15.02.2020", time: "12:00", entryLimit: 6, entryCost: 5.6, bio: "Super duper cool party in the pool", photo: #imageLiteral(resourceName: "Party")),
-    Event(name: "Party in Eindhoven", location: "Eindhoven", date: "16.03.2020", time: "13:00", entryLimit: 7, entryCost: 6.5, bio: "Super duper cool party in Eindhoven", photo: #imageLiteral(resourceName: "Party"))
+    Event(name: "Party in the garden", location: "Garden", date: "14.01.2020", time: "11:00", entryLimit: 5, entryCost: 5.5, bio: "Super duper cool party in the garden", photo: #imageLiteral(resourceName: "Party"),latitude: 51.64053,longitude: 5.47778),
+    Event(name: "Party in the pool", location: "Pool", date: "15.02.2020", time: "12:00", entryLimit: 6, entryCost: 5.6, bio: "Super duper cool party in the pool", photo: #imageLiteral(resourceName: "Party"),latitude: 51.74083,longitude: 5.47778),
+    Event(name: "Party in Eindhoven", location: "Eindhoven", date: "16.03.2020", time: "13:00", entryLimit: 7, entryCost: 6.5, bio: "Super duper cool party in Eindhoven", photo: #imageLiteral(resourceName: "Party"),latitude: 51.44083,longitude: 5.47778)
     ]
     
     
