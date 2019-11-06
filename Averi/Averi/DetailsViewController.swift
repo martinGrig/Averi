@@ -114,7 +114,7 @@ class DetailsViewController: UIViewController {
                     print("Case default")
         }
         
-        agendaViewController?.onUserAction(event: (event ?? nil)!)
+        agendaViewController?.onUserAction(event: event!)
         
         
     }
