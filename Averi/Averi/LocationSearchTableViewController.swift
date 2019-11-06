@@ -69,7 +69,7 @@ extension LocationSearchTableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
         let selectedItem = matchingItems[indexPath.row].placemark
         cell.textLabel?.text = selectedItem.name
-        cell.detailTextLabel?.text = ""
+        cell.detailTextLabel?.text = "a"
         return cell
     }
 }
