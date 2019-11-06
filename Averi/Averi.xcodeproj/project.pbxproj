@@ -106,8 +106,8 @@
 				3FB9DE7523508C7C00F4FC70 /* SettingsTableViewCell.swift */,
 				3F6E9AA623508DDF00AC15E6 /* CreateTableViewController.swift */,
 				3FC8DFA12361CD9F0004F20F /* DetailsViewController.swift */,
-				3F1299C323632FA200F66CCA /* LocationViewController.swift */,
 				3F620ACD2371830C00691588 /* AgendaDetailsViewController.swift */,
+				3F1299C323632FA200F66CCA /* LocationViewController.swift */,
 				3F620ACF2371D14C00691588 /* LocationSearchTableViewController.swift */,
 			);
 			path = Averi;
